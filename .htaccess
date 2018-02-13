@@ -1,0 +1,38 @@
+#for change wp-admin enter
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteRule ^adminka/?$ /wp-login.php?secretka [R,L]
+
+RewriteCond %{HTTP_COOKIE} !^.*wordpress_logged_in_.*$
+RewriteRule ^adminka/?$ /wp-login.php?secretka&amp;redirect_to=/wp-admin/ [R,L]
+
+RewriteRule ^adminka/?$ /wp-admin/?secretka [R,L]
+
+RewriteCond %{SCRIPT_FILENAME} !^(.*)admin-ajax\.php
+RewriteCond %{HTTP_REFERER} !^(.*)wordpress4/wp-admin
+RewriteCond %{HTTP_REFERER} !^(.*)wordpress4/wp-login\.php
+RewriteCond %{HTTP_REFERER} !^(.*)wordpress4/adminka
+RewriteCond %{QUERY_STRING} !^secretka
+RewriteCond %{QUERY_STRING} !^action=logout
+RewriteCond %{QUERY_STRING} !^action=rp
+RewriteCond %{QUERY_STRING} !^action=postpass
+RewriteCond %{HTTP_COOKIE} !^.*wordpress_logged_in_.*$
+RewriteRule ^.*wp-admin/?|^.*wp-login\.php /not_found [R,L]
+
+RewriteCond %{QUERY_STRING} ^loggedout=true
+RewriteRule ^.*$ /wp-login.php?secretka [R,L]
+</IfModule>
+#end
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
