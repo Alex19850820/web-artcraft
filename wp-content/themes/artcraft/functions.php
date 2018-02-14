@@ -214,3 +214,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Меняем лимит слов excerpt
+function excerpt_word_limit($length) {
+	return 50;
+}
+add_filter('excerpt_length', 'excerpt_word_limit');
+
+//вместо трех точек и скобок
+function new_excerpt_more($more) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
