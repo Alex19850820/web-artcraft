@@ -119,3 +119,8 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 jQuery(function($){
 	$("#phone").mask("+9(999) 999-99-99");
 });
+
+var uploader = new qq.FineUploader({
+	element: document.getElementById("uploader"),
+	allowedExtensions: ['jpeg', 'png']
+});

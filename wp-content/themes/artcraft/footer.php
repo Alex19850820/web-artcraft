@@ -33,7 +33,7 @@
 
 		<div class="brief__content">
 
-			<form action="" method="post" id="send_form" class="brief__form" onsubmit="return false;" enctype="multipart/form-data" class="brief__form">
+			<form  method="post" id="send_form" class="brief__form" onsubmit="return false;" enctype="multipart/form-data">
 				<div class="brief__form-head">
 					<div>
 						<label for="name">Ваше имя, фамилия *</label>
@@ -56,19 +56,24 @@
 					</div>
 				</div>
 
-				<div class="brief__form-message">
+				<div class="brief__form-message" lang="ru">
 					<label for="message">Сообщение</label>
 					<textarea id="text" placeholder="Сообщение"></textarea>
 
-					<label for="add-file">
-						<!--							<img src="--><?php //bloginfo('template_url')?><!--/img/clip.png" width="13" height="13" alt=""> Прикрепить файл</label>-->
-						<!--						<input type="file" id="add-file" name='file'>-->
-						<input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />
-						<label for="file-2"><img src="<?php bloginfo('template_url')?>/img/clip.png" width="13" height="13" alt=""> <span>Прикрепить файл&hellip;</span></label>
+					<!--<label for="add-file">-->
+					<!--<img src="-->
+					<?php //bloginfo('template_url')?>
+					<!--/img/clip.png" width="13" height="13" alt=""> Прикрепить файл</label>-->
+					<!--<input type="file" id="add-file" name='file'>-->
+					<!--<input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />-->
+					<!--<label for="file-2"><img src="-->
+					<?php //bloginfo('template_url')?><!--/img/clip.png" width="13" height="13" alt=""> <span>Прикрепить файл&hellip;</span></label>-->
 						<!--<input  type='file' id="file" name='file'>-->
+					<div id="uploader" class="uploader"></div>
 				</div>
 				<div class="brief__form-services">
 					<h3>Какие услуги Вас интересуют?</h3>
+					
 					<input id="ckeckbox_mob" type="checkbox" name="ckeckbox_mob" value="Дизайн сайта или дизайн landing-page">
 					<label for="ckeckbox_mob"><span></span>Дизайн сайта или дизайн landing-page</label>
 
@@ -121,16 +126,16 @@
 </section>
 <!-- end brief.html-->
 <?php wp_footer(); ?>
-<script>
-	$('.grid').imagesLoaded( function() {
-		$('.grid').masonry({
-			itemSelector: '.grid-item',
-			// columnWidth: '.grid-sizer',
-			percentPosition: true
-		});
-	});
-</script>
 <a href="#" class="scrollup"></a>
-</body>
-</html>
+<script>
+	// $('.grid').imagesLoaded( function() {
+	// 	$('.grid').masonry({
+	// 		itemSelector: '.grid-item',
+	// 		// columnWidth: '.grid-sizer',
+	// 		percentPosition: true
+	// 	});
+	// });
+	// Some options to pass to the uploader are discussed on the next page
+	
+</script>
 <!-- end html_close.html-->
