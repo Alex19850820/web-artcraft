@@ -2,6 +2,8 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		$(document).on('click', '.send', function(e){
 		e.preventDefault();
 
+
+		// var file_data = $('#file-2').prop('files')[0];
 		var file_data = $('#file-2').prop('files')[0];
 		//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
 		var form_data = new FormData();
@@ -118,9 +120,4 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 
 jQuery(function($){
 	$("#phone").mask("+9(999) 999-99-99");
-});
-
-var uploader = new qq.FineUploader({
-	element: document.getElementById("uploader"),
-	allowedExtensions: ['jpeg', 'png']
 });

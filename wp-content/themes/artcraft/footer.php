@@ -69,8 +69,9 @@
 					<!--<label for="file-2"><img src="-->
 					<?php //bloginfo('template_url')?><!--/img/clip.png" width="13" height="13" alt=""> <span>Прикрепить файл&hellip;</span></label>-->
 						<!--<input  type='file' id="file" name='file'>-->
-					<div id="uploader" class="uploader"></div>
+					<div id="fine-uploader" class="uploader"></div>
 				</div>
+				
 				<div class="brief__form-services">
 					<h3>Какие услуги Вас интересуют?</h3>
 					
@@ -119,7 +120,7 @@
 
 	<div class="animate-circle"></div>
 
-	<img src="<?=$atts['img']['url']?>" alt="" class="balloon">
+	<img src="<?php bloginfo('template_url')?>/img/balloon.png" alt="" class="balloon">
 
 	<p class="fill-brief"><span>покорить вершины легко!</span>Осталось только заполнить бриф</p>
 
@@ -135,7 +136,33 @@
 	// 		percentPosition: true
 	// 	});
 	// });
+	
 	// Some options to pass to the uploader are discussed on the next page
+	
+	var uploader = new qq.FineUploader({
+		failedUploadTextDisplay: {
+			mode: 'default',
+			responseProperty: 'error',
+		},
+		
+		element: document.getElementById("fine-uploader"),
+		validation: {
+			sizeLimit: 31457280
+
+		},
+		request: {
+			endpoint: '<?php bloginfo( 'template_url')?>/uploads'
+		},
+		deleteFile: {
+			enabled: true,
+			endpoint: '<?php bloginfo( 'template_url')?>/uploads'
+		},
+		retry: {
+			enableAuto: true
+		},
+		allowedExtensions: ['jpeg', 'png']
+		
+	})
 	
 </script>
 <!-- end html_close.html-->

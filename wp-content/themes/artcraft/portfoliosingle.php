@@ -3,57 +3,92 @@
 Template Name: portfolio
 Template Post Type: post
 */
-get_header();
+get_header('portfolio');
 ?>
-<section class="blog inside-blog" id="blog">
-    <div class="container">
+<main class="main__single-p">
+	<section class="blog blog__single" id="blog">
+	    <div class="container">
+	
+	        <p class="paragraph">наши работы </p>
 
-        <p class="paragraph">наши работы </p>
+		    <nav class="broadcrumbs">
+			    <a class="broadcrumbs__link" href="/">Главная</a>
+			    <span class="broadcrumbs__divider"> / </span>
+			    <a class="broadcrumbs__link" href="blog">Портфолио</a>
+			    <span class="broadcrumbs__divider"> / </span>
+			    <span class="broadcrumbs__curr"><?php the_title(); ?></span>
+		    </nav>
 
-        <div class="wrap">
+		    <div class="wrap single-p">
+			    <div class="single-p__layout">
+				    <a class="single-p__fancybox" href="<?= get_the_post_thumbnail_url()?>" data-fancybox="images" data-caption="
+                        <div class='portfolio__block-caption'>
+                            <span>Веб-дизайн для Мастер газ</span>
+                            <a href='#'>Смотреть работу на <span class='gradient'>behance.ru</span></a>
+                        </div">
+					
+					    <?= get_the_post_thumbnail( $id, 'medium' )?>
 
-            <div class="tittle">
-                <span>портфолио </span>
-                <h2>наши работы </h2>
-                <p>
-	                Мы готовы предложить вам все виды наших услуг.
-	                Знайте: для каждого клиента у нас есть особое предложение.
-                </p>
-            </div>
+					    <span class="magnifier">
+                            <img src="<?php bloginfo('template_url')?>/img/full-size.svg" width="20" height="20" alt="">
+                        </span>
+				    </a>
+			    </div>
+			    <div class="single-p__desc">
+				    <div class="single-p__about">
+			            <?php while ( have_posts() ) : the_post();
+								get_template_part( 'template-parts/content-portfolio', get_post_type() );
+								/*the_post_navigation();*/
+							endwhile; ?>
+	                </div>
 
-            <div class="blog__content">
-	            <?php while ( have_posts() ) : the_post();
-						get_template_part( 'template-parts/content', get_post_type() );
-						/*the_post_navigation();*/
-					endwhile; ?>
-            </div>
-	        <?php $blogQuery = new WP_Query([
-                'category_name' => 'blog',
-		        'posts_per_page' => 10
-	        ]); ?>
+				    <div class="single-p__soc">
+					    <div class="soc__block soc__be">
+						    <div class="soc__icon">
+							    <a href="#">
+								    <img src="<?php bloginfo('template_url')?>/img/be-p.png" alt="">
+							    </a>
+						    </div>
 
-	        <div class="blog__slider">
-		        <div class="tittle">
-			        <span>читайте еще  </span>
-			        <h2>в нашем блоге</h2>
-		        </div>
-		        <div class="blog__slider--wrap">
-			        <?php while ( $blogQuery->have_posts() ) { $blogQuery->the_post(); ?>
-				        <div class="blog__slider--slide">
-					        <?php the_post_thumbnail(); ?>
-					        <div class="slide__title">
-						        <h3 class="slide__post-title dotdot-title"><?php the_title(); ?></h3>
-						        <time class="slide__post-time"><?php the_date()?>7 часов назад</time>
-					        </div>
-					        <div class="slide__hover">
-						        <span class="dotdot"><?php the_title(); ?></span>
-						        <a href="<?php the_permalink(); ?>">Читать далее</a>
-					        </div>
-				        </div>
-			        <?php } ?>
-		        </div>
+						    <div class="soc__desc">
+							    <p>Наша работа</p>
+							    <a href="#">www.behance.net</a>
+						    </div>
+					    </div>
+
+					    <div class="soc__block soc__pin">
+						    <div class="soc__icon">
+							    <a href="#">
+								    <img src="<?php bloginfo('template_url')?>/img/pinterest.png" alt="">
+							    </a>
+						    </div>
+
+						    <div class="soc__desc">
+							    <p>Наша работа</p>
+							    <a href="#">www.pinterest.com</a>
+						    </div>
+					    </div>
+				    </div>
+				    
+				    <div class="single__order">
+					    <div class="order__ask">
+						    <h3 class="order__ask-title">Понравилась работа?</h3>
+						    <p class="order__ask-text">Хотите заказать похожее?</p>
+					    </div>
+
+					    <a href="#brief" class="order__btn scroll">Заказать</a>
+				    </div>
+
+				    <div class="single-p__stock">
+					    <h3 class="stock__title">
+						    <img src="<?php bloginfo('template_url')?>/img/stock.png" alt=""><span class="stock__red">Акция!</span>
+					    </h3>
+
+					    <p class="stock__desc">Закажи услугу <strong>«Landing page под ключ»</strong> и получи оформление группы в любой из популярных соц. сетей в <span class="stock__red">ПОДАРОК!</span></p>
+				    </div>
+			    </div>
 	        </div>
-        </div>
-    </div>
-</section>
+	    </div>
+	</section>
+</main>
 <?php get_footer();

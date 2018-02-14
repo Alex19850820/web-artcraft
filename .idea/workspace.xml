@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fedc3e4b-ccee-4cff-9b52-d9f0a2975009" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/header-blog.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/header-portfolio.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/page-portfolio.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content-portfolio.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/css/libs.min.css" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/css/libs.min.css" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/css/styles.min.css" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/css/styles.min.css" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/css/styles.min.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/css/styles.min.css.map" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/footer.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-blog/views/view.php" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-blog/views/view.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-portfolio/views/view.php" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-portfolio/views/view.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/views/view.php" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/views/view.php" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/functions.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/header.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/img/left-arrow-act.png" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/img/left-arrow-act.png" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/img/portfolio.jpg" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/img/portfolio.jpg" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/js/script.min.js" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/js/script.min.js" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/js/script_form.js" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/js/script_form.js" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/portfoliosingle.php" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/portfoliosingle.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/single.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,51 +33,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-blog/views/view.php">
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="43" column="66" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="66" />
+            <state relative-caret-position="221">
+              <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-portfolio/views/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-442">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="options.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/options.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script_form.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/js/script_form.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="124" column="31" lean-forward="false" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/config.php">
+      <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-portfolio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content-portfolio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header-blog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/header-blog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -70,8 +76,50 @@
       <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="138" column="4" lean-forward="false" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+            <state relative-caret-position="219">
+              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portfoliosingle.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/portfoliosingle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="92" column="7" lean-forward="true" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header-portfolio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/header-portfolio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+              <folding>
+                <element signature="e#6#267#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-portfolio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/page-portfolio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content-page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -80,38 +128,8 @@
       <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/views/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="87" lean-forward="false" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="146" column="91" lean-forward="false" selection-start-line="146" selection-start-column="78" selection-end-line="146" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portfoliosingle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/portfoliosingle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="42" />
+            <state relative-caret-position="253">
+              <caret line="59" column="84" lean-forward="false" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -145,6 +163,9 @@
       <find>fine-uploader.min.js</find>
       <find>css/fine-uploader-gallery.css</find>
       <find>script.min.js</find>
+      <find>fine-uploader.min</find>
+      <find>fine-uploader</find>
+      <find>uploader</find>
     </findStrings>
     <replaceStrings>
       <replace>ac.art-craft.xyz</replace>
@@ -186,23 +207,28 @@
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/theme/options/customizer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/css/styles.min.css" />
         <option value="$USER_HOME$/Downloads/wordpress4 (2).sql" />
-        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-portfolio/options.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/ArtCraft/ArtCraft/index.html" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/includes/custom-functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/blog/views/view.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-blog/views/view.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/portfoliosingle.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/config.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/views/view.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/js/script_form.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-blog/views/view.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-portfolio/views/view.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/artcraft/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/js/script_form.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/header_portfolio.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/header-portfolio.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/page-portfolio.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/views/view.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/header-blog.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content-portfolio.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/artcraft/portfoliosingle.php" />
       </list>
     </option>
   </component>
@@ -273,7 +299,7 @@
               <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="artcraft" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework-customizations" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="wordpress4" type="b2602c69:ProjectViewProjectNode" />
@@ -281,7 +307,62 @@
               <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="artcraft" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework-customizations" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="extensions" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wordpress4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="artcraft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework-customizations" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="extensions" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shortcodes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wordpress4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="artcraft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework-customizations" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="extensions" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shortcodes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shortcodes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wordpress4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="artcraft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework-customizations" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="extensions" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shortcodes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shortcodes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portfolio" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wordpress4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="artcraft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework-customizations" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="extensions" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shortcodes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shortcodes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="portfolio" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wordpress4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="artcraft" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -298,9 +379,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\OpenServer\domains\wordpress4\wp-content\themes\artcraft\framework-customizations\extensions\shortcodes\shortcodes" />
-      <recent name="D:\OpenServer\domains\wordpress4\wp-content\themes\artcraft" />
       <recent name="D:\OpenServer\domains\wordpress4\wp-content\themes\artcraft\template-parts" />
+      <recent name="D:\OpenServer\domains\wordpress4\wp-content\themes\artcraft" />
+      <recent name="D:\OpenServer\domains\wordpress4\wp-content\themes\artcraft\framework-customizations\extensions\shortcodes\shortcodes" />
       <recent name="D:\OpenServer\domains\wordpress4\wp-content\themes\artcraft\css" />
       <recent name="D:\OpenServer\domains\wordpress4\wp-content\themes\artcraft\js" />
     </key>
@@ -341,15 +422,16 @@
       <workItem from="1515069149155" duration="45603000" />
       <workItem from="1515681954814" duration="118000" />
       <workItem from="1515682113568" duration="7658000" />
-      <workItem from="1518424854509" duration="24335000" />
+      <workItem from="1518424854509" duration="39069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120073000" />
+    <option name="totallyTimeSpent" value="134807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="760" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -360,7 +442,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -382,28 +464,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-result/options.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="60" column="27" lean-forward="true" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-result/views/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-header/options.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-brief/views/search.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-brief/options.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -580,30 +640,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#175#0#PHP" expanded="false" />
-            <marker date="1518434264252" expanded="true" signature="1795:1946" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,16 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding>
-            <element signature="e#6#153#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/post-thumbnail-template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -673,10 +704,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-blog/views/view.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/css/styles.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="43" column="66" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="66" />
+        <state relative-caret-position="219">
+          <caret line="0" column="34752" lean-forward="false" selection-start-line="0" selection-start-column="34752" selection-end-line="0" selection-end-column="34752" />
           <folding />
         </state>
       </provider>
@@ -689,18 +720,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/portfoliosingle.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/js/script_form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-portfolio/views/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -713,50 +736,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/views/view.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-blog/views/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="87" lean-forward="false" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
+        <state relative-caret-position="459">
+          <caret line="33" column="62" lean-forward="false" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/main-portfolio/views/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/css/styles.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="0" column="34752" lean-forward="false" selection-start-line="0" selection-start-column="34752" selection-end-line="0" selection-end-column="34752" />
+        <state relative-caret-position="204">
+          <caret line="39" column="66" lean-forward="false" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="146" column="91" lean-forward="false" selection-start-line="146" selection-start-column="78" selection-end-line="146" selection-end-column="91" />
+        <state relative-caret-position="448">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="114" column="62" lean-forward="false" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="138" column="4" lean-forward="false" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+        <state relative-caret-position="219">
+          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/js/script_form.js">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/header-portfolio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="124" column="31" lean-forward="false" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+        <state relative-caret-position="221">
+          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding>
+            <element signature="e#6#267#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/page-portfolio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/framework-customizations/extensions/shortcodes/shortcodes/portfolio/views/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="59" column="84" lean-forward="false" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/header-blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/template-parts/content-portfolio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/artcraft/portfoliosingle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="92" column="7" lean-forward="true" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
           <folding />
         </state>
       </provider>

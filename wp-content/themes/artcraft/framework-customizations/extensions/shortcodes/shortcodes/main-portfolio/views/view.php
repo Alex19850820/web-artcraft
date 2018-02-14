@@ -36,9 +36,8 @@
 			<div class="portfolio__gallery">
 
 				<div class="gallery__block portfolio-link">
-					<a href="portfolio">
-						<img src="<?php bloginfo('template_url')?>/img/portfolio.jpg" alt="">
-					</a>
+					<img src="<?php bloginfo('template_url')?>/img/portfolio.jpg" alt="">
+					<a class="gallery__block-link" href="portfolio">Посмотреть все работы</a>
 				</div>
 				
 				<?php $portQuery = new WP_Query([

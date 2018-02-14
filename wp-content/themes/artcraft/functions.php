@@ -128,6 +128,7 @@ function artcraft_scripts() {
 	wp_enqueue_style( 'artcraft-libs', get_template_directory_uri() . '/css/libs.min.css' );
 	wp_enqueue_style( 'artcraft-style', get_template_directory_uri() . '/css/styles.min.css' );
 	wp_enqueue_style( 'artcraft-fine_up_gallery', get_template_directory_uri() . '/css/fine-uploader-gallery.css' );
+	
 	// для внешних стилей
 	//wp_enqueue_style( 'artcraft-style', get_stylesheet_uri() );
 	
@@ -152,6 +153,7 @@ function artcraft_scripts() {
 	wp_enqueue_script( 'artcraft-inputjs', get_template_directory_uri() . '/js/input.js', [], '', true );
 	wp_enqueue_script( 'artcraft-jquery.maskedinput', get_template_directory_uri() . '/js/jquery.maskedinput.min.js', [], '', true );
 	wp_enqueue_script( 'artcraft-fine_up_js', get_template_directory_uri() . '/js/fine-uploader.min.js', [], '', true );
+
 	
 	
 	/*

@@ -30,7 +30,10 @@
 			]); ?>
 
 			<div class="blog__slider--wrap">
-				
+					<div class="blog__slider--slide">
+						<img src="<?php bloginfo('template_url')?>/img/current.jpg" alt="">
+						<a class="blog__slider--blog" href="blog">Посмотреть все новости</a>
+					</div>
 					<?php while ( $blogQuery->have_posts() ) { $blogQuery->the_post(); ?>
 						<div class="blog__slider--slide">
 							<?php the_post_thumbnail(); ?>
