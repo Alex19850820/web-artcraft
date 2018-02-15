@@ -14,6 +14,8 @@
 <!-- start brief.html-->
 <?php $phone = fw_get_db_customizer_option('phone');?>
 <?php $email = fw_get_db_customizer_option('email');?>
+<?php $vk = fw_get_db_customizer_option('vk');?>
+<?php $facebook = fw_get_db_customizer_option('facebook');?>
 
 <section class="brief" id="brief">
 
@@ -38,7 +40,6 @@
 					<div>
 						<label for="name">Ваше имя, фамилия *</label>
 						<input type="text" name="name" required placeholder="Ваше имя" id="name">
-						<span class="error-box">*</span>
 					</div>
 					<div>
 						<label for="phone">Ваш номер телефона *</label>
@@ -65,7 +66,7 @@
 					<?php //bloginfo('template_url')?>
 					<!--/img/clip.png" width="13" height="13" alt=""> Прикрепить файл</label>-->
 					<!--<input type="file" id="add-file" name='file'>-->
-					<!--<input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />-->
+					<input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />
 					<!--<label for="file-2"><img src="-->
 					<?php //bloginfo('template_url')?><!--/img/clip.png" width="13" height="13" alt=""> <span>Прикрепить файл&hellip;</span></label>-->
 						<!--<input  type='file' id="file" name='file'>-->
@@ -100,8 +101,12 @@
 				</div>
 				<div class="brief__social">
 					<strong>Соц. сети</strong>
-					<a href="https://vk.com"><img src="<?php bloginfo('template_url')?>/img/vk-ico.png" alt=""></a>
-					<a href="https://facebook.com"><img src="<?php bloginfo('template_url')?>/img/fb-ico.png" alt=""></a>
+					<?php if($vk):?>
+						<a href="<?=$vk?>"><img src="<?php bloginfo('template_url')?>/img/vk-ico.png" alt=""></a>
+					<?php endif;?>
+					<?php if($facebook):?>
+						<a href="<?=$facebook?>"><img src="<?php bloginfo('template_url')?>/img/fb-ico.png" alt=""></a>
+					<?php endif;?>
 				</div>
 				<div class="brief__messengers">
 					<strong>Мессенджеры</strong>
@@ -144,24 +149,23 @@
 			mode: 'default',
 			responseProperty: 'error',
 		},
-		
 		element: document.getElementById("fine-uploader"),
 		validation: {
+			allowedExtensions: ['jpeg', 'png', 'jpg'],
+			itemLimit: 5,
 			sizeLimit: 31457280
-
 		},
+		template: 'qq-template',
 		request: {
-			endpoint: '<?php bloginfo( 'template_url')?>/uploads'
+			endpoint: '<?php bloginfo('template_url')?>/includes/fine-uploader/endpoint.php'
 		},
 		deleteFile: {
 			enabled: true,
-			endpoint: '<?php bloginfo( 'template_url')?>/uploads'
+			endpoint: '<?php bloginfo( 'template_url')?>/includes/fine-uploader/endpoint.php'
 		},
 		retry: {
 			enableAuto: true
 		},
-		allowedExtensions: ['jpeg', 'png']
-		
 	})
 	
 </script>

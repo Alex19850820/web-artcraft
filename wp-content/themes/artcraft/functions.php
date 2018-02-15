@@ -125,6 +125,7 @@ function artcraft_scripts() {
  */
 	// для локальных стилей
 	wp_enqueue_style( 'artcraft-favicons', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'artcraft-align', get_template_directory_uri() . '/css/align.css' );
 	wp_enqueue_style( 'artcraft-libs', get_template_directory_uri() . '/css/libs.min.css' );
 	wp_enqueue_style( 'artcraft-style', get_template_directory_uri() . '/css/styles.min.css' );
 	wp_enqueue_style( 'artcraft-fine_up_gallery', get_template_directory_uri() . '/css/fine-uploader-gallery.css' );
@@ -141,7 +142,7 @@ function artcraft_scripts() {
 	* 4) версия (оставляем пустые кавычки)
 	* 5) подключение в футере (true = да, false = нет)
 	*/
-	wp_enqueue_script( 'artcraft-jquery', get_template_directory_uri() . '/js/jquery-3.2.1.min.js', [], '', true );
+	wp_enqueue_script( 'artcraft-jquery', get_template_directory_uri() . '/js/jquery-3.3.1.js', [], '', true );
 	wp_enqueue_script( 'artcraft-slick', get_template_directory_uri() . '/js/slick.min.js', [], '', true );
 	wp_enqueue_script( 'artcraft-fancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js', [], '', true );
 	wp_enqueue_script( 'artcraft-dotdotdot', get_template_directory_uri() . '/js/jquery.dotdotdot.js', [], '', true );
@@ -225,3 +226,7 @@ function new_excerpt_more($more) {
 	return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+//убираем лишнее <p> теги
+//remove_filter( 'the_content', 'wpautop' );
+//add_editor_style();

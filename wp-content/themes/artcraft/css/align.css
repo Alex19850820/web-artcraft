@@ -1,0 +1,19 @@
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+.aligncenter {
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+alignnone {
+	margin: 15px;
+}
+.in_active_item {
+	display: none;
+}
