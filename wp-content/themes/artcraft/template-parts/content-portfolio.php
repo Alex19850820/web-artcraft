@@ -9,6 +9,5 @@
 
 ?>
 <h2 class="single-p__title"><?php the_title(); ?></h2>
-<p class="single-p__text">
-	<?php the_content(); ?>
-</p>
+
+<?php the_content(); ?>

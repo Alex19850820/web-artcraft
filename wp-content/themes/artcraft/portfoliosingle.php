@@ -32,12 +32,10 @@ get_header('portfolio');
 				    </a>
 			    </div>
 			    <div class="single-p__desc">
-				    <div class="single-p__about">
 			            <?php while ( have_posts() ) : the_post();
 								get_template_part( 'template-parts/content-portfolio', get_post_type() );
 								/*the_post_navigation();*/
 							endwhile; ?>
-	                </div>
 
 				   <!--portfolio single shortcode-->
 			    </div>

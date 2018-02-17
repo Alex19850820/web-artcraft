@@ -66,7 +66,7 @@
 					<?php //bloginfo('template_url')?>
 					<!--/img/clip.png" width="13" height="13" alt=""> Прикрепить файл</label>-->
 					<!--<input type="file" id="add-file" name='file'>-->
-					<input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />
+<!--					<input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />-->
 					<!--<label for="file-2"><img src="-->
 					<?php //bloginfo('template_url')?><!--/img/clip.png" width="13" height="13" alt=""> <span>Прикрепить файл&hellip;</span></label>-->
 						<!--<input  type='file' id="file" name='file'>-->

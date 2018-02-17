@@ -22,7 +22,7 @@ get_header('blog');
 			    <span class="broadcrumbs__divider"> / </span>
 			    <a class="broadcrumbs__link" href="blog">Блог</a>
 			    <span class="broadcrumbs__divider"> / </span>
-			    <span class="broadcrumbs__curr">Ваш логотип скопирован</span>
+			    <span class="broadcrumbs__curr"><?php the_title(); ?></span>
 		    </nav>
 	
 	        <div class="wrap">

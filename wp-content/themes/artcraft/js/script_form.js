@@ -5,12 +5,9 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		//для отправки файла
 		// var file_data = $('#file-2').prop('files')[0];
 
-			//var file_data = $("input[name='qqfile']");
 
-			//console.log(file_data); return false;
 		//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
 		var form_data = new FormData();
-
 		// присоединяем наш файл
 		/*jQuery.each(jQuery('#file')[0].files, function(i, file) {
 			data.append('file-'+i, file);
@@ -122,10 +119,22 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			alert('Вы не заполнили все поля!');
 		}
 	});
+
+	var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true
+    });
+
+	$('.grid').imagesLoaded( function() {
+        $grid;
+	});
+
 	$(document).on('click', '.more_btn', function(e) {
 		e.preventDefault();
-		$('.in_active_item').show('slow');
+		$('.in_active_item').show();
 		$('.more_btn').hide();
+
+        $grid.masonry('layout');
 	});
 });
 
@@ -133,10 +142,3 @@ jQuery(function($){
 	$("#phone").mask("+9(999) 999-99-99");
 });
 
-$('.grid').imagesLoaded( function() {
-	$('.grid').masonry({
-		itemSelector: '.grid-item',
-		// columnWidth: '.grid-sizer',
-		percentPosition: true
-	});
-});

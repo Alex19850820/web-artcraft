@@ -17,8 +17,8 @@
 		<div class="wrap">
 
 			<div class="tittle">
-				<span><?=$atts['title']?></span>
-				<h2><?=$atts['h2']?></h2>
+				<span class="block_span_title"><?=$atts['title']?></span>
+				<h2 class="block_title"><?=$atts['h2']?></h2>
 				<p>
 					<?=$atts['desc']?>
 				</p>

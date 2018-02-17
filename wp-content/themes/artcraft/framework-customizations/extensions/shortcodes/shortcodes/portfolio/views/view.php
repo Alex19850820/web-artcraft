@@ -53,8 +53,11 @@
 										<span class="magnifier">
 											<img src="<?php bloginfo('template_url')?>/img/full-size.svg" width="20" height="20" alt="">
 										</span>
-									</a class="grid-item__fancybox">
-									<?php the_post_thumbnail()?>
+									</a>
+
+                                    <a href="<?= get_the_permalink(get_the_ID()); ?>">
+                                        <?php the_post_thumbnail()?>
+                                    </a>
 				<!--					<img class="grid-item__img" src="" alt="Баннер">-->
 								</div>
 							<?php endif;?>
@@ -76,8 +79,12 @@
 										<span class="magnifier">
 											<img src="<?php bloginfo('template_url')?>/img/full-size.svg" width="20" height="20" alt="">
 										</span>
-										</a class="grid-item__fancybox">
-										<?php the_post_thumbnail()?>
+
+										</a>
+
+                                        <a href="<?= get_the_permalink(get_the_ID()); ?>">
+                                            <?php the_post_thumbnail()?>
+                                        </a>
 										<!--					<img class="grid-item__img" src="" alt="Баннер">-->
 									</div>
 								<?php endif;?>

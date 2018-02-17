@@ -19,16 +19,6 @@ $options = [
 				'label' => __( 'E-mail', '{domain}' ),
 				'value' => '',
 			],
-			'vk' => [
-				'type'  => 'text',
-				'label' => __( 'VK', '{domain}' ),
-				'value' => '',
-			],
-			'facebook' => [
-				'type'  => 'text',
-				'label' => __( 'Facebook', '{domain}' ),
-				'value' => '',
-			],
 		],
 	],
 	'panel_h' => [
