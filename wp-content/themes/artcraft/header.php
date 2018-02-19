@@ -21,7 +21,7 @@
 	<?php wp_head();?>
 
 	<script type="text/template" id="qq-template">
-		<div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Drop files here">
+		<div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Положить файлы сюда">
 			<div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
 				<div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
 			</div>
@@ -29,7 +29,7 @@
 				<span class="qq-upload-drop-area-text-selector"></span>
 			</div>
 			<div class="qq-upload-button-selector qq-upload-button">
-				<div>Upload a file</div>
+				<div>Загрузить файл</div>
 			</div>
 			<span class="qq-drop-processing-selector qq-drop-processing">
                 <span>Processing dropped files...</span>
@@ -90,7 +90,7 @@
 				<div class="qq-dialog-message-selector"></div>
 				<input type="text">
 				<div class="qq-dialog-buttons">
-					<button type="button" class="qq-cancel-button-selector">Cancel</button>
+					<button type="button" class="qq-cancel-button-selector">Отмена</button>
 					<button type="button" class="qq-ok-button-selector">Ok</button>
 				</div>
 			</dialog>
