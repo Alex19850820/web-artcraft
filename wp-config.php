@@ -20,7 +20,7 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define('DB_NAME', 'wordpress4');
+define('DB_NAME', 'wp_cg');
 
 /** Имя пользователя MySQL */
 define('DB_USER', 'root');
