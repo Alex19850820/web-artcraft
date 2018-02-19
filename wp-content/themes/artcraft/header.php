@@ -129,6 +129,18 @@ d.addEventListener("DOMContentLoaded", f, false);
 <!— /Yandex.Metrika counter —>
 <!-- open .header -->
 <!-- start header.html-->
+<div class="page-preloader">
+	<svg viewBox="0 0 1000 200">
+		<!-- Symbol-->
+		<symbol id="s-text">
+			<text text-anchor="middle" x="50%" y="50%" dy=".35em">Craft Group</text>
+		</symbol>
+		<!-- Duplicate symbols-->
+		<use class="text" xlink:href="#s-text"></use>
+		<use class="text" xlink:href="#s-text"></use>
+		<use class="text" xlink:href="#s-text"></use>
+	</svg>
+</div>
 <header class="header header-index">
 	<div class="container">
 		<div class="header__mobile-btn"><span></span></div>
