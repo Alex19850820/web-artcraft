@@ -149,9 +149,9 @@ $(document).on('click', '.more_btn', function(e) {
 	$grid.masonry('layout');
 });
 
-$(window).onload(function () {
-	$('.page-preloader').css('display', 'none');
-})
+window.onload = function () {
+	$('.page-preloader').hide(400);
+}
 
 jQuery(function($){
 	$("#phone").mask("+9(999) 999-99-99");
