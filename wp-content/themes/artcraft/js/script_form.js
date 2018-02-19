@@ -5,7 +5,6 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		//для отправки файла
 		// var file_data = $('#file-2').prop('files')[0];
 
-
 		//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
 		var form_data = new FormData();
 		// присоединяем наш файл
@@ -13,11 +12,13 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			data.append('file-'+i, file);
 		});*/
 
+
 		//для отправки файла
 		// form_data.append('file', file_data);
 
 		var name = $("input[name='name']").val();
 		var phone = $("input[name='phone']").val();
+		var qqfile = $("input[name='qqfile']").val();
 		var service_mob = $("input[name='ckeckbox_mob']:checked");
 		var service_supp = $("input[name='ckeckbox_supp']:checked");
 		var service_site = $("input[name='ckeckbox_site']:checked");
@@ -77,12 +78,15 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 
 
 		if(name != '') {
-			form_data.append('action', 'sendForm');
+			var form_data2 = new FormData($('#send_form')[0]);
+
+			form_data2.append('action', 'sendForm');
 			form_data.append('name', name);
 			form_data.append('phone', phone);
 			form_data.append('email', email);
 			form_data.append('skype', phone);
 			form_data.append('text', text);
+			form_data2.append('file', qqfile);
 			if(service_mob.length != 0){
 				form_data.append('service_mob', service_mob.val());
 			}
@@ -101,7 +105,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			$.ajax({
 				url: myajax.url,
 				type: 'post',
-				data: form_data,
+				data: form_data2,
 				contentType: false,
 				processData: false,
 				success: function (response) {
