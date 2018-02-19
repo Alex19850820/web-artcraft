@@ -18,6 +18,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 
 		var name = $("input[name='name']").val();
 		var phone = $("input[name='phone']").val();
+		var file = $('.qq-thumbnail-selector').attr('src');
 		var service_mob = $("input[name='ckeckbox_mob']:checked");
 		var service_supp = $("input[name='ckeckbox_supp']:checked");
 		var service_site = $("input[name='ckeckbox_site']:checked");
@@ -30,6 +31,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		//var re = /^\d[\d\(\)\ -]{4,14}\d$/;
 		//var valid_phone = re.test(phone);
 
+		//console.log(file); return false;
 		if (name == '') {
 			alert('Введите Ваше имя!');
 			return false;
