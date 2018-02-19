@@ -127,6 +127,9 @@ var $grid = $('.grid').masonry({
 });
 
 $('.grid').imagesLoaded( function() {
+	$('.grid-preloader').css('display', 'none');
+	$('.grid').css('display', 'block');
+	
 	$('.grid').masonry({
 		itemSelector: '.grid-item',
 		percentPosition: true
@@ -140,15 +143,6 @@ $(document).on('click', '.more_btn', function(e) {
 
 	$grid.masonry('layout');
 });
-
-$(window).load(function() {
-	$('.grid').masonry({
-		itemSelector: '.grid-item',
-		percentPosition: true
-	});
-
-})
-
 
 jQuery(function($){
 	$("#phone").mask("+9(999) 999-99-99");
