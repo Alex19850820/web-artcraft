@@ -10,8 +10,6 @@ add_action( 'wp_ajax_nopriv_sendForm', 'sendForm' );
 //
 function sendForm() {
 	if ( $_POST ) {
-		fw_print($_POST);
-		die();
 		// обрабатываем запрос
 		$adminEmail = get_option('admin_email');
 		$name = $_POST['name'];
