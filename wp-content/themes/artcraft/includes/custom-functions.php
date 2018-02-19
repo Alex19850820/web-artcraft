@@ -7,6 +7,9 @@
  */
 add_action( 'wp_ajax_sendForm', 'sendForm' );
 add_action( 'wp_ajax_nopriv_sendForm', 'sendForm' );
+
+add_action( 'wp_ajax_get_more_works', 'get_more_works' );
+add_action( 'wp_ajax_nopriv_get_more_works', 'get_more_works' );
 //
 function sendForm() {
 	if ( $_POST ) {
@@ -60,3 +63,37 @@ function trim_title_chars($count, $after) {
     else $after = '';
     echo $title . $after;
 }
+
+function get_more_works () { ?>
+	<?php $portQuery = new WP_Query([
+		'category_name' => 'portfolio',
+//	'posts_per_page' => 5
+	]); ?>
+	<?php $n = 0;?>
+	<?php  while ( $portQuery->have_posts() ):?>
+		<?php  $portQuery->the_post();  ?>
+		<?php $n++;?>
+		<?php if($n > $_POST['count']):?>
+			<div class="grid-item">
+				<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
+
+				<a class="grid-item__fancybox" href="<?php the_post_thumbnail_url()?>" data-fancybox="images" data-caption="
+				<div class='portfolio__block-caption'>
+					<span>Веб-дизайн для Мастер газ</span>
+					<a href='#'>Смотреть работу на <span class='gradient'>behance.ru</span></a>
+				</div">
+
+				<span class="magnifier">
+					<img src="<?php bloginfo('template_url')?>/img/full-size.svg" width="20" height="20" alt="">
+				</span>
+
+				</a>
+
+                <a href="<?= get_the_permalink(get_the_ID()); ?>">
+                    <?php the_post_thumbnail()?>
+                </a>
+				<!--					<img class="grid-item__img" src="" alt="Баннер">-->
+			</div>
+		<?php endif;?>
+	<?php endwhile;?>
+<?php }?>
