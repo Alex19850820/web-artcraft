@@ -146,6 +146,10 @@ $(document).on('click', '.more_btn', function(e) {
 	$grid.masonry('layout');
 });
 
+$(window).onload(function () {
+	$('.page-preloader').css('display', 'none');
+})
+
 jQuery(function($){
 	$("#phone").mask("+9(999) 999-99-99");
 });

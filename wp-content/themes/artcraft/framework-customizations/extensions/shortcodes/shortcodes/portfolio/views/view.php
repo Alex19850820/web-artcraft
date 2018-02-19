@@ -48,7 +48,7 @@
                         </svg>
                         <p class="text-preloader">Загружаем галерею</p>
                     </div>
-                    
+
 					<div class="grid">
 						<?php $i = 0;?>
 						<?php while ( $portQuery->have_posts() ) { $portQuery->the_post(); ?>
