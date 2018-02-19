@@ -35,6 +35,20 @@
 					</p>
 				</div>
 				<div class="wrapper">
+                    <div class="grid-preloader">
+                        <svg viewBox="0 0 1000 200">
+                            <!-- Symbol-->
+                            <symbol id="s-text">
+                                <text text-anchor="middle" x="50%" y="50%" dy=".35em">Craft Group</text>
+                            </symbol>
+                            <!-- Duplicate symbols-->
+                            <use class="text" xlink:href="#s-text"></use>
+                            <use class="text" xlink:href="#s-text"></use>
+                            <use class="text" xlink:href="#s-text"></use>
+                        </svg>
+                        <p class="text-preloader">Загружаем галерею</p>
+                    </div>
+                    
 					<div class="grid">
 						<?php $i = 0;?>
 						<?php while ( $portQuery->have_posts() ) { $portQuery->the_post(); ?>
