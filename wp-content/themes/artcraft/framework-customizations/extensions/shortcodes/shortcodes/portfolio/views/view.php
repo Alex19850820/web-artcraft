@@ -39,7 +39,7 @@
 						<?php $i = 0;?>
 						<?php while ( $portQuery->have_posts() ) { $portQuery->the_post(); ?>
 							<?php $i++;?>
-							<?php if($i < $atts['count']):?>
+							<?php if($i <= $atts['count']):?>
 								
 								<div class="grid-item">
 									<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
@@ -89,7 +89,6 @@
 									</div>
 								<?php endif;?>
 							<?php endwhile;?>
-					
 						
 					</div>
 				</div>

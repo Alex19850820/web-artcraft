@@ -1,5 +1,5 @@
 $(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
-		$(document).on('click', '.send', function(e){
+	$(document).on('click', '.send', function(e){
 		e.preventDefault();
 
 		//для отправки файла
@@ -36,8 +36,8 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		}
 		if (phone == '') {
 			alert('Введите номер телефона!');
-		 	return false;
-		 }
+			return false;
+		}
 		// if (valid_phone){
 		// 	output = 'Номер телефона введен правильно!';
 		// 	/*alert(output);*/
