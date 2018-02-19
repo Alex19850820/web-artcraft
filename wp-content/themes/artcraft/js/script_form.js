@@ -143,10 +143,28 @@ $('.grid').imagesLoaded( function() {
 
 $(document).on('click', '.more_btn', function(e) {
 	e.preventDefault();
-	$('.in_active_item').show();
-	$('.more_btn').hide();
+	//$('.in_active_item').show();
+	// $('.more_btn').hide();
 
-	$grid.masonry('layout');
+	//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
+	var form_data = new FormData();
+	var more = $('.more_btn').data('count');
+	form_data.append('action', 'get_more_works');
+	form_data.append('count', 'more');
+
+	$.ajax({
+		url: myajax.url,
+		type: 'post',
+		data: form_data,
+		contentType: false,
+		processData: false,
+		success: function (response) {
+			$('.grid').html(response);
+			$grid.masonry('reloadItems');
+			$grid.masonry('layout');
+		}
+	});
+
 });
 
 jQuery(function($){

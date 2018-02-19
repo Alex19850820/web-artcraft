@@ -157,7 +157,8 @@
 		},
 		template: 'qq-template',
 		request: {
-			endpoint: '<?php bloginfo('template_url')?>/includes/fine-uploader/endpoint.php'
+			endpoint: '<?php bloginfo('template_url')?>/includes/fine-uploader/endpoint.php',
+			forceMultipart: false,
 		},
 		deleteFile: {
 			enabled: true,
@@ -178,10 +179,12 @@
 			uploadButton: 'Прикрепить файлы',
 			failUpload: 'Не закачан!'
 		}
-	}).on('complete', function(event, id, fileName, responseJSON)
+	})
+	//обработка события
+		.on('complete', function(event, id, fileName, responseJSON)
 	{
 		if (responseJSON.success) //если серверная часть вернула статус успешное завершение
-			$('#form_order').append('<input name="files[]" id="file" type="hidden" value="'+responseJSON.uploadName+'">');
+			$('#send_form').append('<input name="files[]" id="file" type="hidden" value="'+responseJSON.uploadName+'">');
 	});
 	
 </script>

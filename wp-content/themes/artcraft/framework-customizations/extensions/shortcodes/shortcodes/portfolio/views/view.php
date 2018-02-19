@@ -52,9 +52,9 @@
 					<div class="grid">
 						<?php $i = 0;?>
 						<?php while ( $portQuery->have_posts() ) { $portQuery->the_post(); ?>
-							<?php $i++;?>
-							<?php if($i <= $atts['count']):?>
-								
+							
+							<?php if($i < $atts['count']):?>
+								<?php $i++;?>
 								<div class="grid-item">
 									<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
 					
@@ -76,38 +76,11 @@
 								</div>
 							<?php endif;?>
 						<?php }?>
-						
-							<?php $n = 0; while ( $portQuery->have_posts() ):?>
-								<?php  $portQuery->the_post();  ?>
-								<?php $n++;?>
-								<?php if($n > $atts['count']):?>
-									<div class="grid-item in_active_item">
-										<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
-
-										<a class="grid-item__fancybox" href="<?php the_post_thumbnail_url()?>" data-fancybox="images" data-caption="
-										<div class='portfolio__block-caption'>
-											<span>Веб-дизайн для Мастер газ</span>
-											<a href='#'>Смотреть работу на <span class='gradient'>behance.ru</span></a>
-										</div">
-					
-										<span class="magnifier">
-											<img src="<?php bloginfo('template_url')?>/img/full-size.svg" width="20" height="20" alt="">
-										</span>
-
-										</a>
-
-                                        <a href="<?= get_the_permalink(get_the_ID()); ?>">
-                                            <?php the_post_thumbnail()?>
-                                        </a>
-										<!--					<img class="grid-item__img" src="" alt="Баннер">-->
-									</div>
-								<?php endif;?>
-							<?php endwhile;?>
-						
+						<div id="result"></div>
 					</div>
 				</div>
-				<?php if($i > $atts['count']):?>
-					<button type="button" class="more_btn">Загрузить ещё</button>
+				<?php if($i <= $atts['count']):?>
+					<button type="button" class="more_btn" data-count="<?=$i?>">Загрузить ещё</button>
 				<?php endif;?>
 			</div>
 		</div>
