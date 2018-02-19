@@ -133,7 +133,7 @@ var $grid = $('.grid').masonry({
 
 $('.grid').imagesLoaded( function() {
 	$('.grid-preloader').css('display', 'none');
-	$('.grid').css('display', 'block');
+	$('.grid, .more_btn').css('display', 'block');
 	
 	$('.grid').masonry({
 		itemSelector: '.grid-item',
