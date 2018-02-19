@@ -27,7 +27,6 @@ function sendForm() {
 			$path = $_FILES['file']['name'];
 			if (copy($_FILES['file']['tmp_name'], $path)) $my_file = $path;
 		}
-		
 		$message = 'Имя: ' . $name . '<br>';
 		$message .= 'Телефон: ' . $phone . '<br>';
 		$message .= 'Услуга: ' . $service . '<br>';

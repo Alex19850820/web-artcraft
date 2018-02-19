@@ -166,7 +166,23 @@
 		retry: {
 			enableAuto: true
 		},
-	})
+		dragAndDrop: {
+			disableDefaultDropzone: true //отключаем дроп-зону
+		},
+		messages: { //русифицируем некоторые сообщения и кнопки
+			typeError: "{file}: неверный тип файла. Принимаются только файлы форматов: {extensions}.",
+			sizeError: "{file}: файл слишком большой. Максимальный размер: {sizeLimit}.",
+			tooManyItemsError: "Вы пытаетесь закачать {netItems}-й файл. Максимальное количество: {itemLimit}."
+		},
+		text: {
+			uploadButton: 'Прикрепить файлы',
+			failUpload: 'Не закачан!'
+		}
+	}).on('complete', function(event, id, fileName, responseJSON)
+	{
+		if (responseJSON.success) //если серверная часть вернула статус успешное завершение
+			$('#form_order').append('<input name="files[]" id="file" type="hidden" value="'+responseJSON.uploadName+'">');
+	});
 	
 </script>
 <!-- end html_close.html-->

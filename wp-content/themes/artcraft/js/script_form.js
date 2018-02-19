@@ -4,7 +4,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 
 		//для отправки файла
 		// var file_data = $('#file-2').prop('files')[0];
-
+		var file_data = $('#form_order');
 
 		//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
 		var form_data = new FormData();
@@ -18,7 +18,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 
 		var name = $("input[name='name']").val();
 		var phone = $("input[name='phone']").val();
-		var file = $('.qq-thumbnail-selector').attr('src');
+		// var file = $('.qq-thumbnail-selector').attr('src');
 		var service_mob = $("input[name='ckeckbox_mob']:checked");
 		var service_supp = $("input[name='ckeckbox_supp']:checked");
 		var service_site = $("input[name='ckeckbox_site']:checked");
@@ -31,7 +31,8 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		//var re = /^\d[\d\(\)\ -]{4,14}\d$/;
 		//var valid_phone = re.test(phone);
 
-		//console.log(file); return false;
+		console.log(file_data); return false;
+
 		if (name == '') {
 			alert('Введите Ваше имя!');
 			return false;
@@ -85,6 +86,8 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			form_data.append('email', email);
 			form_data.append('skype', phone);
 			form_data.append('text', text);
+			// form_data.append('file', file);
+
 			if(service_mob.length != 0){
 				form_data.append('service_mob', service_mob.val());
 			}
