@@ -5,7 +5,6 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		//для отправки файла
 		// var file_data = $('#file-2').prop('files')[0];
 
-
 		//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
 		var form_data = new FormData();
 		// присоединяем наш файл
@@ -158,11 +157,18 @@ $(document).on('click', '.more_btn', function(e) {
 	var more = $('.more_btn').data('count');
 	var all = $('.more_btn').data('all');
 	var inpage = $('.more_btn').data('inpage');
-
+	var cur = $('#countItems').data('count');
 	form_data.append('action', 'get_more_works');
-	form_data.append('count', more);
-	form_data.append('all', all);
+	if(cur){
+		$('.more_btn').attr('data-count', cur);
+		form_data.append('count', cur);
+	} else {
+		form_data.append('count', more);
+	}
 	form_data.append('inpage', inpage);
+	if(cur >= all) {
+		$('.more_btn').hide();
+	}
 
 	$.ajax({
 		url: myajax.url,
@@ -172,11 +178,7 @@ $(document).on('click', '.more_btn', function(e) {
 		processData: false,
 		success: function (response) {
 			var $response = $(response);
-			var cur = $('#countItems').data('count');
-			$('#curButton').attr('data-count', cur);
-			if(cur === all ){
-				$('#curButton').hide();
-			}
+
 			$('.grid').append($response).imagesLoaded(function() {
 				$('.grid').masonry('appended', $response, true);
 			});

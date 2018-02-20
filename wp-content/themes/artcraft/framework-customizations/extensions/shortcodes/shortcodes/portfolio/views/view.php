@@ -7,11 +7,18 @@
   */
 
 ?>
+<?php $countPost = new WP_Query([
+	'category_name' => 'portfolio',
+]); $cnt =0;?>
+<?php while ( $countPost->have_posts() ) { $countPost->the_post(); ?>
+	<?php $cnt++;?>
+<?php }?>
+
 <?php $portQuery = new WP_Query([
 	'category_name' => 'portfolio',
-//	'posts_per_page' => 5
-]); ?>
-
+	'posts_per_page' => $atts['count'],
+]);
+?>
 <!-- start content-portfolio.html-->
 <div class="main-portfolio">
 	<section class="blog blog__single" id="blog">
@@ -50,10 +57,8 @@
                     </div>
 
 					<div class="grid">
-						<?php $i = 0; $count = 0;?>
+						<?php $i = 0;?>
 						<?php while ( $portQuery->have_posts() ) { $portQuery->the_post(); ?>
-							<?php $count ++;?>
-							<?php if($i < $atts['count']):?>
 								<?php $i++;?>
 								<div class="grid-item">
 									<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
@@ -73,11 +78,10 @@
                                     </a>
 				<!--					<img class="grid-item__img" src="" alt="Баннер">-->
 								</div>
-							<?php endif;?>
 						<?php }?>
 					</div>
 				</div>
-					<button type="button" class="more_btn" id="curButton" data-all="<?=$count?>" data-count="<?=$i?>" data-inpage="<?=$atts['count']?>">Загрузить ещё</button>
+					<button type="button" class="more_btn" id="curButton"  data-count="<?=$i?>" data-inpage="<?=$atts['count']?>" data-all="<?=$cnt?>">Загрузить ещё</button>
 			</div>
 		</div>
 	</section>

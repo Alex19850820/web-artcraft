@@ -83,15 +83,13 @@ function trim_title_chars($count, $after) {
 function get_more_works () { ?>
 	<?php $portQuery = new WP_Query([
 		'category_name' => 'portfolio',
-//	'posts_per_page' => 5
+		'posts_per_page' => $_POST['inpage'],
+		'offset' => $_POST['count'],
 	]); ?>
-	<?php $n = 0; $i=0;?>
+	<?php $n= $_POST['count'];?>
 	<?php  while ( $portQuery->have_posts() ):?>
 		<?php  $portQuery->the_post();  ?>
-		<?php $n++;?>
-		<?php if($n > ($_POST['count'])) : ?>
-			<?php $i++;?>
-				<?php if($i <= $_POST['inpage']):?>
+			<?php $n++;?>
 				<div class="grid-item">
 				<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
 
@@ -111,8 +109,6 @@ function get_more_works () { ?>
                 </a>
 				<!--					<img class="grid-item__img" src="" alt="Баннер">-->
 			</div>
-			<?php endif;?>
-		<?php endif;?>
 	<?php endwhile;?>
 	<input type="hidden" id="countItems" data-count="<?=$n?>">
 <?php }?>
