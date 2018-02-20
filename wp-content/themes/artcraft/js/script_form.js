@@ -185,7 +185,7 @@ $(document).on('click', '.more_btn', function(e) {
 });
 
 window.onload = function () {
-	$('.page-preloader').hide(400);
+	$('.page-preloader').fadeOut(400);
 }
 
 jQuery(function($){
