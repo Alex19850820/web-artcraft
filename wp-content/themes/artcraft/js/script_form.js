@@ -15,10 +15,16 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 
 		//для отправки файла
 		// form_data.append('file', file_data);
+		var arr = [];
+			$('.qq-thumbnail-selector').each(function(){
+				arr = $(this).prop('src');
+			});
+
 
 		var name = $("input[name='name']").val();
 		var phone = $("input[name='phone']").val();
-		// var file = $('.qq-thumbnail-selector').attr('src');
+		// var file =  $('.qq-thumbnail-selector').attr('src');
+
 		var service_mob = $("input[name='ckeckbox_mob']:checked");
 		var service_supp = $("input[name='ckeckbox_supp']:checked");
 		var service_site = $("input[name='ckeckbox_site']:checked");
@@ -31,7 +37,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 		//var re = /^\d[\d\(\)\ -]{4,14}\d$/;
 		//var valid_phone = re.test(phone);
 
-		console.log(file_data); return false;
+
 
 		if (name == '') {
 			alert('Введите Ваше имя!');
@@ -86,7 +92,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			form_data.append('email', email);
 			form_data.append('skype', phone);
 			form_data.append('text', text);
-			// form_data.append('file', file);
+			form_data.append('file', arr);
 
 			if(service_mob.length != 0){
 				form_data.append('service_mob', service_mob.val());
@@ -150,7 +156,7 @@ $(document).on('click', '.more_btn', function(e) {
 	var form_data = new FormData();
 	var more = $('.more_btn').data('count');
 	form_data.append('action', 'get_more_works');
-	form_data.append('count', 'more');
+	form_data.append('count', more);
 
 	$.ajax({
 		url: myajax.url,
@@ -159,7 +165,8 @@ $(document).on('click', '.more_btn', function(e) {
 		contentType: false,
 		processData: false,
 		success: function (response) {
-			$('.grid').html(response);
+			$('.grid').append(response);
+			// $('.grid').html(response);
 			$grid.masonry('reloadItems');
 			$grid.masonry('layout');
 		}

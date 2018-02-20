@@ -30,6 +30,10 @@ function sendForm() {
 			$path = $_FILES['file']['name'];
 			if (copy($_FILES['file']['tmp_name'], $path)) $my_file = $path;
 		}
+		if(!empty($_POST['file'])){
+			$path = $_POST['file'];
+			if (copy($_POST['file'], $path)) $my_file = $path;
+		}
 		$message = 'Имя: ' . $name . '<br>';
 		$message .= 'Телефон: ' . $phone . '<br>';
 		$message .= 'Услуга: ' . $service . '<br>';
@@ -74,7 +78,8 @@ function get_more_works () { ?>
 		<?php  $portQuery->the_post();  ?>
 		<?php $n++;?>
 		<?php if($n > $_POST['count']):?>
-			<div class="grid-item">
+			
+				<div class="grid-item">
 				<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
 
 				<a class="grid-item__fancybox" href="<?php the_post_thumbnail_url()?>" data-fancybox="images" data-caption="
