@@ -50,9 +50,9 @@
                     </div>
 
 					<div class="grid">
-						<?php $i = 0;?>
+						<?php $i = 0; $count = 0;?>
 						<?php while ( $portQuery->have_posts() ) { $portQuery->the_post(); ?>
-							
+							<?php $count ++;?>
 							<?php if($i < $atts['count']):?>
 								<?php $i++;?>
 								<div class="grid-item">
@@ -80,7 +80,7 @@
 					</div>
 				</div>
 				<?php if($i <= $atts['count']):?>
-					<button type="button" class="more_btn" data-count="<?=$i?>">Загрузить ещё</button>
+					<button type="button" class="more_btn" data-all="<?=$count?>" data-count="<?=$i?>">Загрузить ещё</button>
 				<?php endif;?>
 			</div>
 		</div>

@@ -77,7 +77,7 @@ function get_more_works () { ?>
 	<?php  while ( $portQuery->have_posts() ):?>
 		<?php  $portQuery->the_post();  ?>
 		<?php $n++;?>
-		<?php if($n > $_POST['count']):?>
+		<?php if($n > $_POST['count'] && $n < $_POST['count'] + $_POST['count'] ):?>
 			
 				<div class="grid-item">
 				<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
