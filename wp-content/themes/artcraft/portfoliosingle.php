@@ -23,7 +23,6 @@ get_header('portfolio');
 			    <div class="single-p__layout">
 				    <a class="single-p__fancybox" href="<?= get_the_post_thumbnail_url()?>" data-fancybox="images" data-caption="
                         <div class='portfolio__block-caption'>
-                            <span></span>
                             <span class='gradient'><?php the_title(); ?></span>
                         </div">
 					

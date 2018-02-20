@@ -60,8 +60,7 @@
 					
 									<a class="grid-item__fancybox" href="<?php the_post_thumbnail_url()?>" data-fancybox="images" data-caption="
 										<div class='portfolio__block-caption'>
-											<span>Веб-дизайн для Мастер газ</span>
-											<a href='#'>Смотреть работу на <span class='gradient'>behance.ru</span></a>
+											<span><?php the_title(); ?></span>
 										</div">
 					
 										<span class="magnifier">

@@ -165,13 +165,12 @@ $(document).on('click', '.more_btn', function(e) {
 		contentType: false,
 		processData: false,
 		success: function (response) {
-			$('.grid').append(response);
-			// $('.grid').html(response);
-			$grid.masonry('reloadItems');
-			$grid.masonry('layout');
+			var $response = $(response);
+			$('.grid').append($response).imagesLoaded(function() {
+				$('.grid').masonry('appended', $response, true);
+			});
 		}
 	});
-
 });
 
 window.onload = function () {
