@@ -85,12 +85,13 @@ function get_more_works () { ?>
 		'category_name' => 'portfolio',
 //	'posts_per_page' => 5
 	]); ?>
-	<?php $n = 0;?>
+	<?php $n = 0; $i=0;?>
 	<?php  while ( $portQuery->have_posts() ):?>
 		<?php  $portQuery->the_post();  ?>
 		<?php $n++;?>
-		<?php if($n > $_POST['count'] && $n <= ($_POST['count'] + $_POST['count'])):?>
-			
+		<?php if($n > ($_POST['count'])) : ?>
+			<?php $i++;?>
+				<?php if($i <= $_POST['inpage']):?>
 				<div class="grid-item">
 				<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
 
@@ -103,7 +104,6 @@ function get_more_works () { ?>
 				<span class="magnifier">
 					<img src="<?php bloginfo('template_url')?>/img/full-size.svg" width="20" height="20" alt="">
 				</span>
-
 				</a>
 
                 <a href="<?= get_the_permalink(get_the_ID()); ?>">
@@ -111,6 +111,8 @@ function get_more_works () { ?>
                 </a>
 				<!--					<img class="grid-item__img" src="" alt="Баннер">-->
 			</div>
+			<?php endif;?>
 		<?php endif;?>
 	<?php endwhile;?>
+	<input type="hidden" id="countItems" data-count="<?=$n?>">
 <?php }?>

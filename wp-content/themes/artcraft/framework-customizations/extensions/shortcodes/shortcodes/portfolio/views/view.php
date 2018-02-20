@@ -75,12 +75,9 @@
 								</div>
 							<?php endif;?>
 						<?php }?>
-						<div id="result"></div>
 					</div>
 				</div>
-				<?php if($i <= $atts['count']):?>
-					<button type="button" class="more_btn" data-all="<?=$count?>" data-count="<?=$i?>">Загрузить ещё</button>
-				<?php endif;?>
+					<button type="button" class="more_btn" id="curButton" data-all="<?=$count?>" data-count="<?=$i?>" data-inpage="<?=$atts['count']?>">Загрузить ещё</button>
 			</div>
 		</div>
 	</section>

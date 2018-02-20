@@ -157,10 +157,12 @@ $(document).on('click', '.more_btn', function(e) {
 	var form_data = new FormData();
 	var more = $('.more_btn').data('count');
 	var all = $('.more_btn').data('all');
+	var inpage = $('.more_btn').data('inpage');
 
 	form_data.append('action', 'get_more_works');
 	form_data.append('count', more);
 	form_data.append('all', all);
+	form_data.append('inpage', inpage);
 
 	$.ajax({
 		url: myajax.url,
@@ -170,6 +172,11 @@ $(document).on('click', '.more_btn', function(e) {
 		processData: false,
 		success: function (response) {
 			var $response = $(response);
+			var cur = $('#countItems').data('count');
+			$('#curButton').attr('data-count', cur);
+			if(cur === all ){
+				$('#curButton').hide();
+			}
 			$('.grid').append($response).imagesLoaded(function() {
 				$('.grid').masonry('appended', $response, true);
 			});
