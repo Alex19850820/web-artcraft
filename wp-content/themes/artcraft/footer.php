@@ -187,7 +187,6 @@
 		callbacks: {
 			onComplete: function (event, id, fileName, responseJSON) {
 				// console.log($("#filePath").val(fileName.path));
-				console.log(fileName);
 					$('#send_form').append('<input class="fileUp" name="file[]" id="file_'+ fileName.uuid +'" type="hidden" value="' + fileName.path + '">');
 			},
 			onDeleteComplete: function(id, xhr, isError) {

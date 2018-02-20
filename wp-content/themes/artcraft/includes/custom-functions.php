@@ -30,19 +30,30 @@ function sendForm() {
 			$path = $_FILES['file']['name'];
 			if (copy($_FILES['file']['tmp_name'], $path)) $my_file = $path;
 		}*/
-	
 		if(!empty($_POST['file'])){
-			$path = $_POST['file'];
+			$path = explode(',' , $_POST['file']);
 			$my_file = $path;
 		}
+		$nameFile = "";
+	
+		
+
 		$message = 'Имя: ' . $name . '<br>';
 		$message .= 'Телефон: ' . $phone . '<br>';
 		$message .= 'Услуга: ' . $service . '<br>';
 		$message .= 'E-mail: ' . $email . '<br>';
 		$message .= 'Skype: ' . $skype . '<br>';
 		$message .= 'Сообщение: ' . $text . '<br>';
-		$message .= 'Файл: ' . $my_file . '<br>';
-		
+//		$message .= 'Файл: ' . $my_file . '<br>';
+		if(is_array($my_file)){
+			foreach ($my_file as $value){
+				$nameFile .= basename($value).";";
+			}
+			$message .= 'Файлы: ' . $nameFile . '<br>';
+		} else {
+			$nameFile .= basename($my_file[0]);
+			$message .= 'Файл: ' . $nameFile . '<br>';
+		}
 		
 		if (wp_mail($adminEmail,'Заявка на обратный звонок', $message, 'content-type: text/html', $my_file)) {
 			$result = [
@@ -78,7 +89,7 @@ function get_more_works () { ?>
 	<?php  while ( $portQuery->have_posts() ):?>
 		<?php  $portQuery->the_post();  ?>
 		<?php $n++;?>
-		<?php if($_POST['count'] < $_POST['count'] + $_POST['count']):?>
+		<?php if($n > $_POST['count'] && $n <= ($_POST['count'] + $_POST['count'])):?>
 			
 				<div class="grid-item">
 				<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>

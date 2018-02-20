@@ -122,6 +122,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 					if (response.result == 'success') {
 						/*form.reset();*/
 						$('#send_form').trigger('reset');
+						$('.qq-upload-success').remove();
 					}
 				}
 			});
