@@ -12,10 +12,10 @@
 ?>
 <!-- start html_close.html-->
 <!-- start brief.html-->
-<?php $phone = fw_get_db_customizer_option('phone');?>
-<?php $email = fw_get_db_customizer_option('email');?>
-<?php $vk = fw_get_db_customizer_option('vk');?>
-<?php $facebook = fw_get_db_customizer_option('facebook');?>
+<?php $phone = fw_get_db_customizer_option( 'phone' ); ?>
+<?php $email = fw_get_db_customizer_option( 'email' ); ?>
+<?php $vk = fw_get_db_customizer_option( 'vk' ); ?>
+<?php $facebook = fw_get_db_customizer_option( 'facebook' ); ?>
 
 <section class="brief" id="brief">
 
@@ -35,7 +35,9 @@
 
 		<div class="brief__content">
 
-			<form  method="post" id="send_form" class="brief__form" onsubmit="return false;" enctype="multipart/form-data">
+			<form method="post" id="send_form" class="brief__form" onsubmit="return false;"
+					enctype="multipart/form-data">
+				<input type="hidden" name="filePath" id="filePath">
 				<div class="brief__form-head">
 					<div>
 						<label for="name">Ваше имя, фамилия *</label>
@@ -60,59 +62,62 @@
 				<div class="brief__form-message" lang="ru">
 					<label for="message">Сообщение</label>
 					<textarea id="text" placeholder="Сообщение"></textarea>
-
 					<!--<label for="add-file">-->
 					<!--<img src="-->
 					<?php //bloginfo('template_url')?>
 					<!--/img/clip.png" width="13" height="13" alt=""> Прикрепить файл</label>-->
 					<!--<input type="file" id="add-file" name='file'>-->
-<!--					<input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />-->
+					<!--					<input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} файла(ов) выбрано" multiple />-->
 					<!--<label for="file-2"><img src="-->
 					<?php //bloginfo('template_url')?><!--/img/clip.png" width="13" height="13" alt=""> <span>Прикрепить файл&hellip;</span></label>-->
-						<!--<input  type='file' id="file" name='file'>-->
+					<!--<input  type='file' id="file" name='file'>-->
 					<div id="fine-uploader" class="uploader"></div>
 				</div>
-				
+
 				<div class="brief__form-services">
 					<h3>Какие услуги Вас интересуют?</h3>
-					
-					<input id="ckeckbox_mob" type="checkbox" name="ckeckbox_mob" value="Дизайн сайта или дизайн landing-page">
+
+					<input id="ckeckbox_mob" type="checkbox" name="ckeckbox_mob"
+							value="Дизайн сайта или дизайн landing-page">
 					<label for="ckeckbox_mob"><span></span>Дизайн сайта или дизайн landing-page</label>
 
-					<input id="ckeckbox_supp" type="checkbox" name="ckeckbox_supp" value="Дизайн печатной продукции (все виды)">
+					<input id="ckeckbox_supp" type="checkbox" name="ckeckbox_supp"
+							value="Дизайн печатной продукции (все виды)">
 					<label for="ckeckbox_supp"><span></span> Дизайн печатной продукции (все виды)</label>
 
 					<input id="ckeckbox_site" type="checkbox" name="ckeckbox_site" value="Посадка сайта на WordPress">
 					<label for="ckeckbox_site"><span></span>Посадка сайта на WordPress</label>
 
-					<input id="ckeckbox_seo" type="checkbox" name="ckeckbox_seo" value="Разработка интернет-магазина на платформе YI2">
+					<input id="ckeckbox_seo" type="checkbox" name="ckeckbox_seo"
+							value="Разработка интернет-магазина на платформе YI2">
 					<label for="ckeckbox_seo"><span></span>Разработка интернет-магазина на платформе YI2</label>
 				</div>
 				<div class="brief__form-desc">
 					<p><span>*</span> обязательные поля</p>
-					<input id="submit"  class="send" type="submit" value="Отправить бриф">
+					<input id="submit" class="send" type="submit" value="Отправить бриф">
 				</div>
 			</form>
 			<div class="brief__contacts">
 				<h3>Наши контакты</h3>
 				<div class="brief__tel">
-					<img src="<?php bloginfo('template_url')?>/img/phone-ico.png" alt="">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/phone-ico.png" alt="">
 					<strong><?=$phone?></strong>
 				</div>
 				<div class="brief__social">
 					<strong>Соц. сети</strong>
-					<?php if($vk):?>
-						<a href="<?=$vk?>"><img src="<?php bloginfo('template_url')?>/img/vk-ico.png" alt=""></a>
-					<?php endif;?>
-					<?php if($facebook):?>
-						<a href="<?=$facebook?>"><img src="<?php bloginfo('template_url')?>/img/fb-ico.png" alt=""></a>
-					<?php endif;?>
+					<?php if ( $vk ): ?>
+						<a href="<?=$vk?>"><img src="<?php bloginfo( 'template_url' ) ?>/img/vk-ico.png" alt=""></a>
+					<?php endif; ?>
+					<?php if ( $facebook ): ?>
+						<a href="<?=$facebook?>"><img src="<?php bloginfo( 'template_url' ) ?>/img/fb-ico.png"
+									alt=""></a>
+					<?php endif; ?>
 				</div>
 				<div class="brief__messengers">
 					<strong>Мессенджеры</strong>
-					<img src="<?php bloginfo('template_url')?>/img/telegram-ico.png" alt="">
-					<img src="<?php bloginfo('template_url')?>/img/003-whatsapp.png" alt="">
-					<img src="<?php bloginfo('template_url')?>/img/wu-ico.png" alt="">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/telegram-ico.png" alt="">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/003-whatsapp.png" alt="">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/wu-ico.png" alt="">
 				</div>
 				<div class="brief__email">
 					<strong>E-mail</strong>
@@ -120,12 +125,12 @@
 				</div>
 			</div>
 		</div>
-		
+
 	</div>
 
 	<div class="animate-circle"></div>
 
-	<img src="<?php bloginfo('template_url')?>/img/balloon.png" alt="" class="balloon">
+	<img src="<?php bloginfo( 'template_url' ) ?>/img/balloon.png" alt="" class="balloon">
 
 	<p class="fill-brief"><span>покорить вершины легко!</span>Осталось только заполнить бриф</p>
 
@@ -141,9 +146,9 @@
 	// 		percentPosition: true
 	// 	});
 	// });
-	
+
 	// Some options to pass to the uploader are discussed on the next page
-	
+
 	var uploader = new qq.FineUploader({
 		failedUploadTextDisplay: {
 			mode: 'default',
@@ -157,12 +162,12 @@
 		},
 		template: 'qq-template',
 		request: {
-			endpoint: '<?php bloginfo('template_url')?>/includes/fine-uploader/endpoint.php',
+			endpoint: '<?php bloginfo( 'template_url' )?>/includes/fine-uploader/endpoint.php',
 			forceMultipart: false,
 		},
 		deleteFile: {
 			enabled: true,
-			endpoint: '<?php bloginfo( 'template_url')?>/includes/fine-uploader/endpoint.php'
+			endpoint: '<?php bloginfo( 'template_url' )?>/includes/fine-uploader/endpoint.php'
 		},
 		retry: {
 			enableAuto: true
@@ -178,14 +183,18 @@
 		text: {
 			uploadButton: 'Прикрепить файлы',
 			failUpload: 'Не закачан!'
+		},
+		callbacks: {
+			onComplete: function (event, id, fileName, responseJSON) {
+				// console.log($("#filePath").val(fileName.path));
+				console.log(fileName);
+					$('#send_form').append('<input class="fileUp" name="file[]" id="file_'+ fileName.uuid +'" type="hidden" value="' + fileName.path + '">');
+			},
+			onDeleteComplete: function(id, xhr, isError) {
+				var id = JSON.parse(xhr.response).uuid;
+				$('#file_' + id).remove();
+			}
 		}
 	})
-	//обработка события
-		.on('complete', function(event, id, fileName, responseJSON)
-	{
-		if (responseJSON.success) //если серверная часть вернула статус успешное завершение
-			$('#send_form').append('<input name="files[]" id="file" type="hidden" value="'+responseJSON.uploadName+'">');
-	});
-	
 </script>
 <!-- end html_close.html-->

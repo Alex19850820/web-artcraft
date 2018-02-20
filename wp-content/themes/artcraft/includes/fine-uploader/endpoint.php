@@ -52,8 +52,9 @@ if ($method == "POST") {
 
         // To return a name used for uploaded file you can use the following line.
         $result["uploadName"] = $uploader->getUploadName();
+        $result["path"] = realpath("../../uploads/")."\\".$result['uuid']."\\".$result['uploadName'];
+        
     }
-
     echo json_encode($result);
 }
 // for delete file requests

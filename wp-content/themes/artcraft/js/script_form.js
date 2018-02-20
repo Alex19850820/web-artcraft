@@ -4,27 +4,27 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 
 		//для отправки файла
 		// var file_data = $('#file-2').prop('files')[0];
-		var file_data = $('#form_order');
+
 
 		//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
 		var form_data = new FormData();
 		// присоединяем наш файл
-		/*jQuery.each(jQuery('#file')[0].files, function(i, file) {
-			data.append('file-'+i, file);
-		});*/
+		// var data = [];
+		// jQuery.each(jQuery('.fileUp')[0].files, function(i, file) {
+		// 	data.append('file-'+i, file);
+		// });
+		// console.log(); return false;
 
 		//для отправки файла
 		// form_data.append('file', file_data);
-		var arr = [];
-			$('.qq-thumbnail-selector').each(function(){
-				arr = $(this).prop('src');
-			});
 
 
 		var name = $("input[name='name']").val();
 		var phone = $("input[name='phone']").val();
-		// var file =  $('.qq-thumbnail-selector').attr('src');
-
+		var file =  [];
+		$('.fileUp').each(function () {
+			file.push( $(this).val());
+		});
 		var service_mob = $("input[name='ckeckbox_mob']:checked");
 		var service_supp = $("input[name='ckeckbox_supp']:checked");
 		var service_site = $("input[name='ckeckbox_site']:checked");
@@ -92,7 +92,7 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 			form_data.append('email', email);
 			form_data.append('skype', phone);
 			form_data.append('text', text);
-			form_data.append('file', arr);
+			form_data.append('file', file);
 
 			if(service_mob.length != 0){
 				form_data.append('service_mob', service_mob.val());
@@ -155,8 +155,11 @@ $(document).on('click', '.more_btn', function(e) {
 	//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
 	var form_data = new FormData();
 	var more = $('.more_btn').data('count');
+	var all = $('.more_btn').data('all');
+
 	form_data.append('action', 'get_more_works');
 	form_data.append('count', more);
+	form_data.append('all', all);
 
 	$.ajax({
 		url: myajax.url,
