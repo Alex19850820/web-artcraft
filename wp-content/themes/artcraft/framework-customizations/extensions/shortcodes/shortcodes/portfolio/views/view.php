@@ -7,16 +7,12 @@
   */
 
 ?>
-<?php $countPost = new WP_Query([
-	'category_name' => 'portfolio',
-]); $cnt =0;?>
-<?php while ( $countPost->have_posts() ) { $countPost->the_post(); ?>
-	<?php $cnt++;?>
-<?php }?>
-
-<?php $portQuery = new WP_Query([
+<?php
+$paged = (get_query_var('page')) ? get_query_var('page') : 1;
+$portQuery = new WP_Query([
 	'category_name' => 'portfolio',
 	'posts_per_page' => $atts['count'],
+	'paged' => $paged,
 ]);
 ?>
 <!-- start content-portfolio.html-->
@@ -57,9 +53,7 @@
                     </div>
 
 					<div class="grid">
-						<?php $i = 0;?>
 						<?php while ( $portQuery->have_posts() ) { $portQuery->the_post(); ?>
-								<?php $i++;?>
 								<div class="grid-item">
 									<a class="grid-item__watch" href="<?= get_the_permalink(get_the_ID()); ?>">Посмотреть работу</a>
 					
@@ -81,11 +75,11 @@
 						<?php }?>
 					</div>
 				</div>
-					<button type="button" class="more_btn" id="curButton"  data-count="<?=$i?>" data-inpage="<?=$atts['count']?>" data-all="<?=$cnt?>">Загрузить ещё</button>
+				
+					<button type="button" class="more_btn" id="curButton"  data-inpage="<?=$atts['count']?>"  data-page="<?=$paged?>">Загрузить ещё</button>
 			</div>
 		</div>
 	</section>
-
 </div>
 <!-- end content-portfolio.html-->
 

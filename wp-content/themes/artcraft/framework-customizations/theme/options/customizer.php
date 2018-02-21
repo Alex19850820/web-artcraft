@@ -19,6 +19,31 @@ $options = [
 				'label' => __( 'E-mail', '{domain}' ),
 				'value' => '',
 			],
+			'vk' => [
+				'type'  => 'text',
+				'label' => __( 'VK', '{domain}' ),
+				'value' => '',
+			],
+			'facebook' => [
+				'type'  => 'text',
+				'label' => __( 'Facebook', '{domain}' ),
+				'value' => '',
+			],
+			'telegram' => [
+				'type'  => 'text',
+				'label' => __( 'Telegram', '{domain}' ),
+				'value' => '',
+			],
+			'whatsapp' => [
+				'type'  => 'text',
+				'label' => __( 'Whatsapp', '{domain}' ),
+				'value' => '',
+			],
+			'wu' => [
+				'type'  => 'text',
+				'label' => __( 'Wu', '{domain}' ),
+				'value' => '',
+			],
 		],
 	],
 	'panel_h' => [

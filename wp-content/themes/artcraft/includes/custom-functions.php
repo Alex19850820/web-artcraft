@@ -81,12 +81,15 @@ function trim_title_chars($count, $after) {
 }
 
 function get_more_works () { ?>
+
 	<?php $portQuery = new WP_Query([
 		'category_name' => 'portfolio',
 		'posts_per_page' => $_POST['inpage'],
-		'offset' => $_POST['count'],
-	]); ?>
-	<?php $n= $_POST['count'];?>
+		'paged' => $_POST['page'],
+//		'offset' => $_POST['count'],
+	]);
+	?>
+	<?php $n = 0;?>
 	<?php  while ( $portQuery->have_posts() ):?>
 		<?php  $portQuery->the_post();  ?>
 			<?php $n++;?>
@@ -109,6 +112,7 @@ function get_more_works () { ?>
                 </a>
 				<!--					<img class="grid-item__img" src="" alt="Баннер">-->
 			</div>
+	
 	<?php endwhile;?>
-	<input type="hidden" id="countItems" data-count="<?=$n?>">
+		<input type="hidden" id="countItems" data-count="<?=$n?>" value="<?=$n?>">
 <?php }?>

@@ -149,26 +149,15 @@ $('.grid').imagesLoaded( function() {
 
 $(document).on('click', '.more_btn', function(e) {
 	e.preventDefault();
-	//$('.in_active_item').show();
-	// $('.more_btn').hide();
-
+	$('#countItems').remove();
 	//создаем экземпляр класс FormData, тут будем хранить всю информацию для отправки
 	var form_data = new FormData();
-	var more = $('.more_btn').data('count');
-	var all = $('.more_btn').data('all');
 	var inpage = $('.more_btn').data('inpage');
-	var cur = $('#countItems').data('count');
+	var count = parseInt($('.more_btn').attr('data-page'))+1;
+	$('.more_btn').attr('data-page', count);
 	form_data.append('action', 'get_more_works');
-	if(cur){
-		$('.more_btn').attr('data-count', cur);
-		form_data.append('count', cur);
-	} else {
-		form_data.append('count', more);
-	}
 	form_data.append('inpage', inpage);
-	if(cur >= all) {
-		$('.more_btn').hide();
-	}
+	form_data.append('page', count);
 
 	$.ajax({
 		url: myajax.url,
@@ -178,17 +167,20 @@ $(document).on('click', '.more_btn', function(e) {
 		processData: false,
 		success: function (response) {
 			var $response = $(response);
-
+			$('.more_btn').attr('data-page', count);
 			$('.grid').append($response).imagesLoaded(function() {
 				$('.grid').masonry('appended', $response, true);
 			});
+			if($('#countItems').val() == 0 ){
+				$('.more_btn').hide();
+			}
 		}
 	});
 });
 
 window.onload = function () {
 	$('.page-preloader').fadeOut(400);
-}
+};
 
 jQuery(function($){
 	$("#phone").mask("+9(999) 999-99-99");

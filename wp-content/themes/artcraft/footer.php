@@ -16,6 +16,10 @@
 <?php $email = fw_get_db_customizer_option( 'email' ); ?>
 <?php $vk = fw_get_db_customizer_option( 'vk' ); ?>
 <?php $facebook = fw_get_db_customizer_option( 'facebook' ); ?>
+<?php $telegram = fw_get_db_customizer_option( 'telegram' ); ?>
+<?php $whatsapp = fw_get_db_customizer_option( 'whatsapp' ); ?>
+<?php $wu = fw_get_db_customizer_option( 'wu' ); ?>
+<?php $mesendger = ['telegram' => $telegram, 'whatsapp' => $whatsapp, 'wu' => $wu ]?>
 
 <section class="brief" id="brief">
 
@@ -115,9 +119,17 @@
 				</div>
 				<div class="brief__messengers">
 					<strong>Мессенджеры</strong>
-					<img src="<?php bloginfo( 'template_url' ) ?>/img/telegram-ico.png" alt="">
-					<img src="<?php bloginfo( 'template_url' ) ?>/img/003-whatsapp.png" alt="">
-					<img src="<?php bloginfo( 'template_url' ) ?>/img/wu-ico.png" alt="">
+					<?php if($mesendger):?>
+						<a href="<?=$mesendger['telegram']?>">
+							<img src="<?php bloginfo( 'template_url' ) ?>/img/telegram-ico.png" alt="">
+						</a>
+						<a href="<?=$mesendger['whatsapp']?>">
+							<img src="<?php bloginfo( 'template_url' ) ?>/img/003-whatsapp.png" alt="">
+						</a>
+						<a href="<?=$mesendger['wu']?>">
+							<img src="<?php bloginfo( 'template_url' ) ?>/img/wu-ico.png" alt="">
+						</a>
+					<?php endif;?>
 				</div>
 				<div class="brief__email">
 					<strong>E-mail</strong>
