@@ -120,13 +120,13 @@
 				<div class="brief__messengers">
 					<strong>Мессенджеры</strong>
 					<?php if($mesendger):?>
-						<a href="<?=$mesendger['telegram']?>">
+						<a href="https://telegram.me/<?=$mesendger['telegram']?>">
 							<img src="<?php bloginfo( 'template_url' ) ?>/img/telegram-ico.png" alt="">
 						</a>
-						<a href="<?=$mesendger['whatsapp']?>">
+						<a href="https://api.whatsapp.com/send?phone=<?=$mesendger['whatsapp']?>">
 							<img src="<?php bloginfo( 'template_url' ) ?>/img/003-whatsapp.png" alt="">
 						</a>
-						<a href="<?=$mesendger['viber']?>">
+						<a href="viber://chat?number=<?=$mesendger['viber']?>">
 							<img src="<?php bloginfo( 'template_url' ) ?>/img/wu-ico.png" alt="">
 						</a>
 					<?php endif;?>
