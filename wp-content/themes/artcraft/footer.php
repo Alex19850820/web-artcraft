@@ -18,8 +18,8 @@
 <?php $facebook = fw_get_db_customizer_option( 'facebook' ); ?>
 <?php $telegram = fw_get_db_customizer_option( 'telegram' ); ?>
 <?php $whatsapp = fw_get_db_customizer_option( 'whatsapp' ); ?>
-<?php $wu = fw_get_db_customizer_option( 'wu' ); ?>
-<?php $mesendger = ['telegram' => $telegram, 'whatsapp' => $whatsapp, 'wu' => $wu ]?>
+<?php $viber = fw_get_db_customizer_option( 'viber' ); ?>
+<?php $mesendger = ['telegram' => $telegram, 'whatsapp' => $whatsapp, 'viber' => $viber ]?>
 
 <section class="brief" id="brief">
 
@@ -126,7 +126,7 @@
 						<a href="<?=$mesendger['whatsapp']?>">
 							<img src="<?php bloginfo( 'template_url' ) ?>/img/003-whatsapp.png" alt="">
 						</a>
-						<a href="<?=$mesendger['wu']?>">
+						<a href="<?=$mesendger['viber']?>">
 							<img src="<?php bloginfo( 'template_url' ) ?>/img/wu-ico.png" alt="">
 						</a>
 					<?php endif;?>

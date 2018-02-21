@@ -39,9 +39,9 @@ $options = [
 				'label' => __( 'Whatsapp', '{domain}' ),
 				'value' => '',
 			],
-			'wu' => [
+			'viber' => [
 				'type'  => 'text',
-				'label' => __( 'Wu', '{domain}' ),
+				'label' => __( 'Viber', '{domain}' ),
 				'value' => '',
 			],
 		],
