@@ -108,7 +108,7 @@ function get_more_works () { ?>
 				</a>
 
                 <a href="<?= get_the_permalink(get_the_ID()); ?>">
-                    <?php the_post_thumbnail()?>
+                    <?php the_post_thumbnail('medium')?>
                 </a>
 				<!--					<img class="grid-item__img" src="" alt="Баннер">-->
 			</div>
