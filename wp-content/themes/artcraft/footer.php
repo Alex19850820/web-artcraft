@@ -110,23 +110,23 @@
 				<div class="brief__social">
 					<strong>Соц. сети</strong>
 					<?php if ( $vk ): ?>
-						<a href="<?=$vk?>"><img src="<?php bloginfo( 'template_url' ) ?>/img/vk-ico.png" alt=""></a>
+						<a href="<?=$vk?>"><img src="<?php bloginfo( 'template_url' ) ?>/img/vk-ico.png" alt=""  target="_blank"></a>
 					<?php endif; ?>
 					<?php if ( $facebook ): ?>
 						<a href="<?=$facebook?>"><img src="<?php bloginfo( 'template_url' ) ?>/img/fb-ico.png"
-									alt=""></a>
+									alt=""  target="_blank"></a>
 					<?php endif; ?>
 				</div>
 				<div class="brief__messengers">
 					<strong>Мессенджеры</strong>
 					<?php if($mesendger):?>
-						<a href="https://telegram.me/<?=$mesendger['telegram']?>">
+						<a href="https://telegram.me/<?=$mesendger['telegram']?>"  target="_blank">
 							<img src="<?php bloginfo( 'template_url' ) ?>/img/telegram-ico.png" alt="">
 						</a>
-						<a href="https://api.whatsapp.com/send?phone=<?=$mesendger['whatsapp']?>">
+						<a href="https://api.whatsapp.com/send?phone=<?=$mesendger['whatsapp']?>"  target="_blank">
 							<img src="<?php bloginfo( 'template_url' ) ?>/img/003-whatsapp.png" alt="">
 						</a>
-						<a href="viber://chat?number=<?=$mesendger['viber']?>">
+						<a href="viber://chat?number=<?=$mesendger['viber']?>"  target="_blank">
 							<img src="<?php bloginfo( 'template_url' ) ?>/img/wu-ico.png" alt="">
 						</a>
 					<?php endif;?>
