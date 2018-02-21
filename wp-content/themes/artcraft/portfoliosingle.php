@@ -26,8 +26,8 @@ get_header('portfolio');
                             <span class='gradient'><?php the_title(); ?></span>
                         </div">
 					
-					    <?= get_the_post_thumbnail( $id, 'medium' )?>
-					    
+					    <?= get_the_post_thumbnail()?>
+					    <!--					    --><?//= get_the_post_thumbnail( $id, 'medium' )?>
 				    </a>
 			    </div>
 			    <div class="single-p__desc">
