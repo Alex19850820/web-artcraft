@@ -38,7 +38,7 @@
 						<div class="blog__slider--slide">
 							<?php the_post_thumbnail(); ?>
 							<div class="slide__title">
-								<h3 class="slide__post-title dotdot-title"><?php the_title(); ?></h3>
+								<h3 class="slide__post-title"><?php the_title(); ?></h3>
 								<time class="slide__post-time"><?php the_date()?></time>
 							</div>
 							
