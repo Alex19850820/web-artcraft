@@ -24,6 +24,12 @@ $options = [
 		'value' => 'Наша миссия - Ваша красота',
 		'label' => __('Заголовок поста', '{domain}'),
 	],*/
+	'img'     => [
+		'type'  => 'upload',
+		'value' => '',
+		'label' => __('Добавить картинку записи', '{domain}'),
+		'images_only' => true,
+	],
 	'first_href'     => [
 		'type'  => 'text',
 		'value' => '',

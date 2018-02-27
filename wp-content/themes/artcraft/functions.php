@@ -230,3 +230,14 @@ add_filter('excerpt_more', 'new_excerpt_more');
 //убираем лишнее <p> теги
 //remove_filter( 'the_content', 'wpautop' );
 //add_editor_style();
+
+/*second thumbnails*/
+if (class_exists('MultiPostThumbnails')) {
+	
+	new MultiPostThumbnails(array(
+		'label' => 'Secondary Image',
+		'id' => 'secondary-image',
+		'post_type' => 'post'
+	) );
+	
+}

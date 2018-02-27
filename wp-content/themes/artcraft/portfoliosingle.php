@@ -26,7 +26,12 @@ get_header('portfolio');
                             <span class='gradient'><?php the_title(); ?></span>
                         </div">
 					
-					    <?= get_the_post_thumbnail()?>
+<!--					    --><?//= get_the_post_thumbnail()?>
+					    <?php if (class_exists('MultiPostThumbnails')) :
+
+					    MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image');
+
+					    endif;?>
 					    <!--					    --><?//= get_the_post_thumbnail( $id, 'medium' )?>
 				    </a>
 			    </div>
@@ -35,11 +40,10 @@ get_header('portfolio');
 								get_template_part( 'template-parts/content-portfolio', get_post_type() );
 								/*the_post_navigation();*/
 							endwhile; ?>
-
-				   <!--portfolio single shortcode-->
 			    </div>
 	        </div>
 	    </div>
 	</section>
 </main>
+	<!--portfolio single shortcode-->
 <?php get_footer();
