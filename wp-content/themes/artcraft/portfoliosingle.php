@@ -25,13 +25,16 @@ get_header('portfolio');
                         <div class='portfolio__block-caption'>
                             <span class='gradient'><?php the_title(); ?></span>
                         </div">
-					
+						
 <!--					    --><?//= get_the_post_thumbnail()?>
-					    <?php if (class_exists('MultiPostThumbnails')) :
-
-					    MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image');
-
-					    endif;?>
+					    <?php if (class_exists('MultiPostThumbnails')) :?>
+					        <?php $image = MultiPostThumbnails::get_post_thumbnail_url(get_post_type(), 'secondary-image');?>
+					        <?php if(!empty($image)):?>
+					            <?php MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image');?>
+					        <?php else:?>
+								<?= get_the_post_thumbnail()?>
+							<?php endif;?>
+					    <?php endif;?>
 					    <!--					    --><?//= get_the_post_thumbnail( $id, 'medium' )?>
 				    </a>
 			    </div>
